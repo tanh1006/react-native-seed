@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/container/NewsContainer/index.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAC/B,OAAO,IAAI,MAAM,4BAA4B,CAAC;AAM9C,MAAM,CAAC,OAAO,oBAAqB,SAAQ,KAAK,CAAC,SAAuB;IACvE,MAAM;QACL,MAAM,CAAC,oBAAC,IAAI,IAAC,UAAU,EAAE,IAAI,CAAC,KAAK,CAAC,UAAU,GAAI,CAAC;IACpD,CAAC;CACD"}
