@@ -12,7 +12,7 @@ const routes = [
         icon: "home",
     },
     {
-        route: "News",
+        route: "NewsDrawer",
         caption: "Bài mới",
         icon: "archive"
     },

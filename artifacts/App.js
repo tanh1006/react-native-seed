@@ -13,9 +13,13 @@ import Forum from "./container/ForumContainer";
 import News from "./container/NewsContainer";
 const Drawer = DrawerNavigator({
     Home: { screen: Home },
-    Forum: { screen: Forum },
+}, {
+    drawerWidth: deviceWidth - 50,
+    drawerPosition: "left",
+    contentComponent: (props) => React.createElement(Sidebar, Object.assign({}, props)),
+});
+const NewsDrawer = DrawerNavigator({
     News: { screen: News },
-    Promotion: { screen: Promotion }
 }, {
     drawerWidth: deviceWidth - 50,
     drawerPosition: "left",
@@ -24,8 +28,11 @@ const Drawer = DrawerNavigator({
 const App = StackNavigator({
     Login: { screen: Login },
     Drawer: { screen: Drawer },
+    NewsDrawer: { screen: NewsDrawer },
     Post: { screen: Post },
     Settings: { screen: Settings },
+    Forum: { screen: Forum },
+    Promotion: { screen: Promotion }
 }, {
     initialRouteName: "Drawer",
     headerMode: "none",

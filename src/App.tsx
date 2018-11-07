@@ -17,9 +17,17 @@ import News from "./container/NewsContainer";
 const Drawer = DrawerNavigator(
 	{
 		Home: { screen: Home },
-		Forum: { screen: Forum },
-		News: { screen : News },
-		Promotion: { screen : Promotion}
+	},
+	{
+		drawerWidth: deviceWidth - 50,
+		drawerPosition: "left",
+		contentComponent: (props: any) => <Sidebar {...props} />,
+	}
+);
+
+const NewsDrawer = DrawerNavigator(
+	{
+		News: { screen: News},
 	},
 	{
 		drawerWidth: deviceWidth - 50,
@@ -32,8 +40,11 @@ const App = StackNavigator(
 	{
 		Login: { screen: Login },
 		Drawer: { screen: Drawer },
+		NewsDrawer: { screen: NewsDrawer },
 		Post: { screen: Post },
 		Settings: { screen : Settings},
+		Forum: { screen: Forum },
+		Promotion: { screen : Promotion}
 	},
 	{
 		initialRouteName: "Drawer",
